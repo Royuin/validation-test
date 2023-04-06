@@ -4,3 +4,28 @@
   font-family: inherit;
   box-sizing: border-box;
 }
+
+body {
+  background-color: #222;
+  color: #bbb;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  margin-top: 15%;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  background-color: #444;
+  padding: 75px;
+  gap: 15px;
+}
+
+span {
+  color: #bb5555;
+}
