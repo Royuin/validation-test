@@ -14,24 +14,28 @@
   <div class="wrapper">
     <h1>Form Test</h1>
     <form>
-      <label for="email">Email:</label>
-      <input type="email">
+      <label for="email">* Email:</label>
+      <input type="email" required>
 
-      <label for="country">Country:</label>
-      <select name="country" id="country">
+      <label for="country">* Country:</label>
+      <select name="country" id="country" required>
         <option value="us">United States</option>
         <option value="se">Sweden</option>
         <option value="jp">Japan</option>
         <option value="it">Italy</option>
       </select>
-      <label for="zip">Zip Code:</label>
-      <input type="tel" name="zip" id="zip">
 
-      <label for="pass">Password:</label>
-      <input type="password" name="pass" id="pass">
+      <label for="zip">* Zip Code:</label>
+      <input type="tel" name="zip" id="zip" required>
 
-      <label for="pass-confirm">Password Confrimation</label>
-      <input type="password" name="pass-confirm" id="pass-confirm">
+      <label for="pass">* Password:</label>
+      <input type="password" name="pass" id="pass" required>
+
+      <label for="pass-confirm">* Password Confrimation</label>
+      <input type="password" name="pass-confirm" id="pass-confirm" required>
+
+      <button>Submit</button>
+
     </form>
   </div>
 </body>
