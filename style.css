@@ -29,3 +29,7 @@ form {
 span {
   color: #bb5555;
 }
+
+.email-error {
+  display: none;
+}
