@@ -13,9 +13,11 @@
 <body>
   <div class="wrapper">
     <h1>Form Test</h1>
-    <form>
+    <form novalidate>
       <label for="email">* Email:</label>
-      <input type="email" required>
+      <input type="email" name="email" id="email" required>
+      <span class="email-error">Please fill out field</span>
+
 
       <label for="country">* Country:</label>
       <select name="country" id="country" required>
@@ -31,10 +33,10 @@
       <label for="pass">* Password:</label>
       <input type="password" name="pass" id="pass" required>
 
-      <label for="pass-confirm">* Password Confrimation</label>
+      <label for="pass-confirm">* Password Confirmation</label>
       <input type="password" name="pass-confirm" id="pass-confirm" required>
 
-      <button>Submit</button>
+      <button id="submit-button">Submit</button>
 
     </form>
   </div>
