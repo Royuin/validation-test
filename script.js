@@ -23,7 +23,7 @@ email.addEventListener('input', (e) => {
 
 countrySelect.addEventListener('change', (e) => {
   const country = countrySelect.value;
-  if (country === 'us') {
+  if (country === 'us' || country === 'it') {
     if (zip.value.length !== 5) {
       zip.setCustomValidity('Invalid zip.');
       zipError.style.display = 'block';
@@ -59,7 +59,7 @@ countrySelect.addEventListener('change', (e) => {
 zip.addEventListener('input', (e) => {
   const country = countrySelect.value;
 
-  if (country === 'us') {
+  if (country === 'us' || country === 'it') {
     if (zip.value.length !== 5) {
       zipError.style.display = 'block';
       zipError.textContent = 'Must be a 5 digit zip code';
