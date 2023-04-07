@@ -33,3 +33,7 @@ span {
 .email-error {
   display: none;
 }
+
+.zip-error {
+  display: none;
+}
